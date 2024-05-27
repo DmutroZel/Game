@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;   
+    font-family: Montserrat;
+}
+
+.player1 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(101, 222, 101, 0.936);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.player2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(101, 123, 222, 0.936);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.target {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(241, 94, 94, 0.936);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    border: 10px double #fff;
+    z-index: 1;
+}
+
+.menuBtn:hover{
+    background-color: cyan;  
+    color: black; 
+}
+
+.menu {
+    width: 400px;
+    height: 100vh;
+    background-color: #000000e9;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.menuBtn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -60px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.menuHeader {
+    width: 100%;
+    height: 50px;
+}
+.settingItem{
+    width: 250px;
+    min-height: 70px;
+    background-color: gainsboro;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.BG1{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://external-preview.redd.it/7BQ9Ig391FbwCzMSgnCCgrzbEpnWXufcUSKwe6g7GXI.jpg?auto=webp&s=7729ce0fa75865ea3e0a40076360938065072bfe);
+    background-size: cover;
+    cursor: pointer;
+}
+.BG2{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/344/966/486/peaky-blinders-wallpaper-preview.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+.BG3{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://wallpapers.com/images/hd/peter-griffin-inside-jail-xwnzfxlhh2opxjf2.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+.BG4{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://www.pixel4k.com/wp-content/uploads/2018/09/miami-florida-usa-city-ocean-bay-coffee-palm-trees-tables-4k_1538068761.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.skinTarget1{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.skinTarget2{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/009/380/457/non_2x/cheese-clipart-design-illustration-free-png.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.skinTarget3{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/022/661/103/original/blue-cartoon-bird-icon-free-png.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.skinTarget4{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d82b2f9f-4ae0-436c-ab1c-777c8318e035/de69voq-619672bb-eed7-4f35-b35c-745f2c20cfae.png/v1/fill/w_1280,h_1987/mario__png__by_kevinfortuna_de69voq-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTk4NyIsInBhdGgiOiJcL2ZcL2Q4MmIyZjlmLTRhZTAtNDM2Yy1hYjFjLTc3N2M4MzE4ZTAzNVwvZGU2OXZvcS02MTk2NzJiYi1lZWQ3LTRmMzUtYjM1Yy03NDVmMmMyMGNmYWUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.bPecbetNLVlig-xBB3DG-BH8DKSbnl9tT_uRepIf1dg);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer1{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://pngfre.com/wp-content/uploads/gun-44-1024x773.png);
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skinplayer2{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-fresh-apple-fruit-red-png-image_10203073.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer3{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://ssc.org.ua/wp-content/uploads/2018/01/arm10_1-90d.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer4{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-white-and-brown-cute-dog-animal-png-image_10211052.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer21{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://liquipedia.net/commons/images/2/25/Brawl_Bull.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer22{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-fresh-apple-fruit-red-png-image_10203073.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer23{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/030/740/112/original/battle-tank-side-view-isolated-on-transparent-background-military-tank-generative-ai-png.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.skinplayer24{
+    width: 50px;
+    height: 50px;
+    border: 2px white solid;
+    border-radius: 50% ;
+    background-image: url(https://cdn.inspireuplift.com/uploads/images/seller_products/33497/1705552136_PatrickBatemanSigmaFaceAmericanPsycho.png);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+
+
+
+
+.audioBtn{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+    border: none;
+
+}
+.audioBtn:hover{
+    background-color: #333;
+    color: white;
+}
+
+
+
+
